@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nishan Rai – Portfolio</title>
+    <title>
+        {{-- <link rel="icon" type="image/png" href="{{assets('public/favicon.png')}}"></link> --}}
+        Nishan Rai – Portfolio
+    </title>
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -42,12 +46,8 @@
             <h1 class="font-space font-bold text-xl">Nishan<span class="text-accentMint">&#8226;</span>Rai</h1>
         </div>
         <div class="hidden md:flex items-center space-x-6">
-            <a href="{{ route('home') }}" class="hover:text-accentMint transition-colors">Home</a>
-            <a href="{{ route('about') }}" class="hover:text-accentMint">About</a>
-            <a href="{{ route('projects') }}" class="hover:text-accentMint">Projects</a>
-            <a href="{{ route('contact') }}" class="hover:text-accentMint">Contact</a>
-            <a href="{{ asset('resume.pdf') }}"
-               class="inline-block bg-accentMint text-surface px-4 py-2 rounded-lg hover:bg-accentViolet transition-colors">Download CV</a>
+            <a href="{{route('home')}}" class="hover:text-accentMint">Home</a>
+               <a class="inline-block bg-accentMint text-surface px-4 py-2 rounded-lg hover:bg-accentViolet transition-colors">Download CV</a>
         </div>
         <button class="md:hidden hover:text-accentMint">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -63,7 +63,7 @@
         <div class="flex flex-col justify-center space-y-6">
             <p class="font-mono text-sm uppercase tracking-wide text-accentMint">FULL STACK DEVELOPER · DHARAN, NEPAL</p>
             <h1 class="font-space font-extrabold text-4xl md:text-6xl leading-tight">
-                I build fast, clean web products —
+                I build fast, clean web products
                 <span class="bg-gradient-to-r from-accentMint to-accentViolet text-transparent bg-clip-text">from frontend to firmware</span>.
             </h1>
             <p class="text-lg md:text-xl text-textMuted">Full Stack Developer and IT student at Itahari International College. I've built an e‑learning platform, an IoT safety device, and a multi‑vendor e‑commerce marketplace.</p>
@@ -102,7 +102,7 @@
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex items-center justify-between mb-10">
             <h2 class="font-space text-2xl font-bold">Selected Work</h2>
-            <a href="{{ route('projects') }}" class="font-mono text-sm uppercase text-accentMint hover:underline">View all &rarr;</a>
+            {{-- <a href="{{ route('projects') }}" class="font-mono text-sm uppercase text-accentMint hover:underline">View all &rarr;</a> --}}
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             @foreach([
@@ -134,7 +134,7 @@
 {{-- CTA band --}}
 <section class="bg-surface py-12 text-center">
     <h3 class="text-2xl font-space font-bold mb-4">Have a project in mind?</h3>
-    <a href="{{ route('contact') }}"
+    {{-- <a href="{{ route('contact') }}" --}}
        class="font-mono text-sm bg-accentMint text-surface py-3 px-6 rounded-md hover:bg-accentViolet transition-colors">Get in touch</a>
 </section>
 
