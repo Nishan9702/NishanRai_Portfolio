@@ -1,1 +1,1 @@
-//
+import '../images/logo.png';

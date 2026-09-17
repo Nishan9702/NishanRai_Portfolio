@@ -4,12 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {{-- <link rel="icon" type="image/png" href="{{assets('public/favicon.png')}}"></link> --}}
-        Nishan Rai – Portfolio
-    </title>
-
+    <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/logo.png') }}">
+    <title>Nishan Rai – Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <script>
         tailwind.config = {
             theme: {
@@ -47,7 +46,9 @@
         </div>
         <div class="hidden md:flex items-center space-x-6">
             <a href="{{route('home')}}" class="hover:text-accentMint">Home</a>
-               <a class="inline-block bg-accentMint text-surface px-4 py-2 rounded-lg hover:bg-accentViolet transition-colors">Download CV</a>
+            <a href="#projects" class="hover:text-accentMint">Projects</a>
+            <a href="#contact" class="hover:text-accentMint">Contact</a>
+            <a class="inline-block bg-accentMint text-surface px-4 py-2 rounded-lg hover:bg-accentViolet transition-colors">Download CV</a>
         </div>
         <button class="md:hidden hover:text-accentMint">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -64,7 +65,7 @@
             <p class="font-mono text-sm uppercase tracking-wide text-accentMint">FULL STACK DEVELOPER · DHARAN, NEPAL</p>
             <h1 class="font-space font-extrabold text-4xl md:text-6xl leading-tight">
                 I build fast, clean web products
-                <span class="bg-gradient-to-r from-accentMint to-accentViolet text-transparent bg-clip-text">from frontend to firmware</span>.
+                <span class="bg-linear-to-r from-accentMint to-accentViolet text-transparent bg-clip-text">from frontend to firmware</span>.
             </h1>
             <p class="text-lg md:text-xl text-textMuted">Full Stack Developer and IT student at Itahari International College. I've built an e‑learning platform, an IoT safety device, and a multi‑vendor e‑commerce marketplace.</p>
             <div class="flex space-x-4 mt-4">
@@ -79,10 +80,10 @@
         </div>
         <div class="flex items-center justify-center">
             <div class="relative">
-                <div class="absolute inset-0 bg-gradient-to-r from-accentMint to-accentViolet opacity-20 rounded-lg filter blur-xl"></div>
-                <img src="{{ asset('UI/portrait-placeholder.png') }}" alt="Portrait of Nishan" class="relative rounded-xl shadow-lg w-72 h-72 object-cover">
-                <div class="absolute top-4 left-4 transform -rotate-3 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded-md text-sm font-mono text-accentMint shadow-sm">CodeIT · Intern</div>
-                <div class="absolute bottom-4 right-4 transform rotate-3 bg-surface/80 backdrop-blur-sm px-3 py-1 rounded-md text-sm font-mono text-accentMint shadow-sm">ESP32 · IoT</div>
+                <div class="absolute inset-0 bg-linear-to-r from-accentMint to-accentViolet opacity-20 rounded-lg filter blur-xl"></div>
+                <img src="{{ Vite::asset('resources/images/nishan.jpg') }}" alt="Portrait of Nishan" class="relative rounded-xl shadow-lg w-72 h-72 object-cover">
+
+
             </div>
         </div>
     </div>
