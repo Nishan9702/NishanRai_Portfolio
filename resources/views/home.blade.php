@@ -1,5 +1,5 @@
-{{-- resources/views/home.blade.php --}}
-<!DOCTYPE html>
+
+{{-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -36,10 +36,10 @@
         };
     </script>
 </head>
-<body class="bg-background text-textPrimary font-inter min-h-screen">
+<body class="bg-background text-textPrimary font-inter min-h-screen"> --}}
 
 {{-- Navigation --}}
-<header class="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-surface/70">
+{{-- <header class="fixed inset-x-0 top-0 z-50 backdrop-blur-lg bg-surface/70">
     <nav class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
         <div class="flex items-center space-x-2">
             <h1 class="font-space font-bold text-xl">Nishan<span class="text-accentMint">&#8226;</span>Rai</h1>
@@ -56,10 +56,10 @@
             </svg>
         </button>
     </nav>
-</header>
+</header> --}}
 
 {{-- Hero section --}}
-<section id="home" class="pt-28 md:pt-32 bg-surface w-full" style="--hero-height:100vh;">
+{{-- <section id="home" class="pt-28 md:pt-32 bg-surface w-full" style="--hero-height:100vh;">
     <div class="max-w-6xl mx-auto px-4 py-12 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-12">
         <div class="flex flex-col justify-center space-y-6">
             <p class="font-mono text-sm uppercase tracking-wide text-accentMint">FULL STACK DEVELOPER · DHARAN, NEPAL</p>
@@ -87,25 +87,25 @@
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 {{-- Tech strip --}}
-<section class="bg-surface/80 py-3 relative overflow-hidden">
+{{-- <section class="bg-surface/80 py-3 relative overflow-hidden">
     <div class="flex space-x-3">
         @foreach(['Java','JavaScript','Python','Tailwind CSS','HTML','CSS','ESP32','Git','REST APIs','HTTP'] as $tech)
             <span class="inline-block px-3 py-1 rounded-md font-mono text-sm text-textPrimary border border-hairline">{{ $tech }}</span>
         @endforeach
     </div>
-</section>
+</section> --}}
 
 {{-- Featured Work --}}
-<section id="featured" class="pt-16 pb-24 bg-surface">
+{{-- <section id="featured" class="pt-16 pb-24 bg-surface">
     <div class="max-w-6xl mx-auto px-4">
         <div class="flex items-center justify-between mb-10">
-            <h2 class="font-space text-2xl font-bold">Selected Work</h2>
+            <h2 class="font-space text-2xl font-bold">Selected Work</h2> --}}
             {{-- <a href="{{ route('projects') }}" class="font-mono text-sm uppercase text-accentMint hover:underline">View all &rarr;</a> --}}
-        </div>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        {{-- </div> --}}
+        {{-- <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             @foreach([
                 ['title'=>'Skill Local','desc'=>'Multi‑vendor e‑commerce marketplace for local artisans.','tech'=>['Tailwind','JavaScript','REST API'],'link'=>['live'=>'https://skill.local','github'=>'https://github.com/Nishan9702/skill-local']],
                 ['title'=>'Smart Helmet','desc'=>'Real‑time sensor alerts on an ESP32 helmet via HTTP.','tech'=>['ESP32','Python','JavaScript'],'link'=>['live'=>null,'github'=>'https://github.com/Nishan9702/smart-helmet']],
@@ -130,17 +130,17 @@
             @endforeach
         </div>
     </div>
-</section>
+</section> --}}
 
 {{-- CTA band --}}
-<section class="bg-surface py-12 text-center">
-    <h3 class="text-2xl font-space font-bold mb-4">Have a project in mind?</h3>
+{{-- <section class="bg-surface py-12 text-center">
+    <h3 class="text-2xl font-space font-bold mb-4">Have a project in mind?</h3> --}}
     {{-- <a href="{{ route('contact') }}" --}}
-       class="font-mono text-sm bg-accentMint text-surface py-3 px-6 rounded-md hover:bg-accentViolet transition-colors">Get in touch</a>
-</section>
+       {{-- class="font-mono text-sm bg-accentMint text-surface py-3 px-6 rounded-md hover:bg-accentViolet transition-colors">Get in touch</a> --}}
+{{-- </section> --}}
 
 {{-- Footer --}}
-<footer class="bg-surface py-6 text-sm text-textMuted">
+{{-- <footer class="bg-surface py-6 text-sm text-textMuted">
     <div class="max-w-6xl mx-auto px-4 flex flex-col items-center">
         <p class="mb-2">© 2026 Nishan Rai. All rights reserved.</p>
         <div class="flex space-x-6">
@@ -153,4 +153,30 @@
 </footer>
 
 </body>
-</html>
+</html> --}}
+
+<x-layout title="Nishan Rai – Portfolio">
+
+    {{-- Hero section --}}
+    <section id="home" class="pt-28 md:pt-32 bg-surface w-full">
+
+        {{-- Put your existing Hero section here --}}
+
+    </section>
+
+    {{-- Tech strip --}}
+    <section>
+        {{-- Existing tech strip --}}
+    </section>
+
+    {{-- Featured Work --}}
+    <section id="featured">
+        {{-- Existing Featured Work --}}
+    </section>
+
+    {{-- CTA --}}
+    <section>
+        {{-- Existing CTA --}}
+    </section>
+
+</x-layout>
