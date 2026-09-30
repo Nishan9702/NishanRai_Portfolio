@@ -66,12 +66,15 @@
                 </a>
 
                 {{-- We will add these when their pages are created --}}
-                <a href="#featured" class="hover:text-accentMint transition-colors">
+                <a href="{{ route('projects') }}" class="hover:text-accentMint transition-colors">
                     Projects
                 </a>
 
-                <a href="#contact" class="hover:text-accentMint transition-colors">
+                <a href="{{ route('contact') }}" class="hover:text-accentMint transition-colors">
                     Contact
+                </a>
+                <a href="{{ route('about') }}" class="hover:text-accentMint transition-colors">
+                    About
                 </a>
 
                 <a href="{{ asset('resume.pdf') }}" download

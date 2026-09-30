@@ -167,7 +167,7 @@
                 </h1>
 
                 <p class="text-lg md:text-xl text-textMuted">Full Stack Developer and IT student at Itahari International
-                    College. I've built an e‑learning platform, an IoT safety device, and a multi‑vendor e‑commerce
+                    College. I've built an e-learning platform, an IoT safety device, and a multi-vendor e-commerce
                     marketplace.</p>
                 <div class="flex space-x-4 mt-4">
                     <a href="mailto:nishansampang9@gmail.com"
