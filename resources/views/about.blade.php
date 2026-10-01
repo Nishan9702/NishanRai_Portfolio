@@ -3,15 +3,42 @@
     {{-- Hero – background image with overlay --}}
     <section class="relative h-screen flex items-center justify-center overflow-hidden bg-surface">
         <div class="absolute inset-0">
-            <img src="{{ asset('images/about-design.png') }}" alt="About page background" class="w-full h-full object-cover opacity-75" />
-            <div class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-transparent mix-blend-multiply"></div>
+            <img src="{{ asset('images/about-design.png') }}" alt="About page background"
+                class="w-full h-full object-cover opacity-75" />
+            <div
+                class="absolute inset-0 bg-gradient-to-b from-transparent via-background to-transparent mix-blend-multiply">
+            </div>
         </div>
 
-        <div class="relative z-10 text-center px-4">
-            <h1 class="font-space text-4xl font-bold text-textPrimary mb-6">About Me</h1>
-            <p class="text-lg text-textMuted max-w-2xl mx-auto">
-                Hi, I’m <strong>Nishan Rai</strong>, an IT student and full‑stack developer focused on web development and practical software projects.
+        <div class="relative z-10 w-full max-w-4xl text-center px-4">
+            <h1 class="font-space text-4xl md:text-5xl font-bold text-textPrimary mb-5">About Me</h1>
+            <p class="max-w-3xl mx-auto mb-7 text-xl md:text-2xl font-medium leading-relaxed text-textPrimary">
+                Hi, I’m <strong class="font-semibold text-accentMint">Nishan Rai</strong>, an IT student and aspiring
+                full-stack developer who enjoys learning by building practical projects.
             </p>
+
+            <div class="max-w-3xl mx-auto space-y-4 text-base md:text-lg leading-8 text-textMuted">
+                <p>
+                    My journey in development has taken me from Java and Python projects to web applications built with
+                    Laravel, JavaScript, and MySQL.
+                </p>
+                <p>
+                    I’m particularly interested in understanding how different parts of a system work together—from
+                    designing the user interface and developing backend functionality to working with databases and APIs.
+                    Throughout my studies and project work,
+                </p>
+                <p>
+                    I’ve gained experience in both frontend and backend development, as well as some exposure to IoT
+                    projects using ESP32 microcontrollers. I enjoy exploring new technologies and frameworks, and I’m always
+                    looking for opportunities to apply my skills to real-world problems.
+                </p>
+                <p>
+                    I’m still learning and improving every day, but I enjoy the process of taking an idea, breaking it into
+                    smaller problems, building a solution, and refining it along the way. My goal is to continue developing
+                    strong software development skills while creating useful, reliable, and well-designed applications.
+                </p>
+            </div>
+
         </div>
     </section>
 
@@ -22,7 +49,8 @@
             {{-- 1. Education --}}
             <div>
                 <h3 class="font-space text-2xl font-semibold mb-4">Education</h3>
-                <p class="text-lg mb-4"><strong>BSc IT – Itahari International College</strong> (currently in progress)</p>
+                <p class="text-lg mb-4"><strong>BSc IT – Itahari International College</strong> (currently in progress)
+                </p>
             </div>
 
             {{-- 2. Development Interests & Skills --}}
@@ -94,7 +122,8 @@
 
             <div class="bg-background border border-hairline rounded-lg p-6 mb-4">
                 <h4 class="font-mono text-sm font-semibold text-accentMint mb-2">CodeIT Internship</h4>
-                <p class="text-textMuted">Contributed to backend API development and database optimization for internal CodeIT applications.</p>
+                <p class="text-textMuted">Contributed to backend API development and database optimization for internal
+                    CodeIT applications.</p>
             </div>
         </div>
     </section>
@@ -102,7 +131,9 @@
     {{-- 5. Closing CTA --}}
     <section class="bg-surface py-12 text-center">
         <h3 class="font-space text-2xl font-bold mb-4">Let’s build something together</h3>
-        <a href="{{ route('projects') }}" class="font-mono text-sm bg-accentMint text-surface py-3 px-6 rounded-md hover:bg-accentViolet transition-colors">View Projects</a>
+        <a href="{{ route('projects') }}"
+            class="font-mono text-sm bg-accentMint text-surface py-3 px-6 rounded-md hover:bg-accentViolet transition-colors">View
+            Projects</a>
     </section>
 
 </x-layout>
