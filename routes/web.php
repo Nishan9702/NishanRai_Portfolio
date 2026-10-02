@@ -2,18 +2,14 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/home', function () {
-    return view('home');
-})->name('home');
+// Root URL
+Route::view('/', 'home')->name('home');
 
-Route::get('/about', function () {
-    return view('about');
-})->name('about');
+// Page routes
+Route::view('/about', 'about')->name('about');
+Route::view('/projects', 'projects')->name('projects');
+Route::view('/contact', 'contact')->name('contact');
 
-Route::get('/projects', function () {
-    return view('projects');
-})->name('projects');
-
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
+// Project detail pages
+Route::view('/projects/{project}', 'projects.{project}')->name('project.show');
+?>
